@@ -1,9 +1,15 @@
+'''
+This Python script uses the Google Maps API to retrieve the distance and 
+current time it would take to reach both the Sunshine Coast and the Gold Coast from the Brisbane CBD.
+Some modules will need to be manually installed before this script will work.
+'''
+
 import googlemaps #pip install GoogleMaps
 from datetime import datetime # import datetime module to retrieve current time
-from tabulate import tabulate # for presenting the results in a tableau layout
+from tabulate import tabulate #pip install tabulate      ###for presenting the results in a tableau layout
 
 def travelspecs():
-    gmaps = googlemaps.Client(key='AIzaSyC4Zr-roMrneExsLek0B0yiB5woxMg1Ds0') #API Key
+    gmaps = googlemaps.Client(key='AIzaSyC4Zr-roMrneExsLek0B0yiB5woxMg1Ds0') #API Key 
 
 
     now = datetime.now()
