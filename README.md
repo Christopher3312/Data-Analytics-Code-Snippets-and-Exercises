@@ -1,2 +1,2 @@
 # Data Analytics Code Snippets and Exercises
-A number of general coding or code for data analysis snippets and exercises.
+A number of small general coding snippets or data analysis exercises.
