@@ -24,6 +24,14 @@ def cast_prediction(arg_data):
     future_data = m.make_future_dataframe(periods=365)
     forecast = m.predict(future_data)
     m.plot(forecast);
+
+def cast_complex_prediction(arg_data):
+    m = Prophet(yearly_seasonality=True)
+    m.fit(arg_data)
+    future_data = m.make_future_dataframe(periods=300)
+    forecast = m.predict(future_data)
+    m.plot(forecast)
+    
     
 cast_prediction(data_t5)
 cast_complex_prediction(data_t5)
