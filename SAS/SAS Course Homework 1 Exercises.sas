@@ -18,7 +18,7 @@ combinedcountry = catx(delimiter, Country, ISO);
 drop delimiter;
 run;
       
-/* Print/displaya subset of the datawhen Intensity of Deprivation Ruralis equal toor greater than 40.0. */
+/* Print/display a subset of the datawhen Intensity of Deprivation Ruralis equal toor greater than 40.0. */
 data filter;
 set mpi;
 If IntensityofDeprivationRural=>40;
